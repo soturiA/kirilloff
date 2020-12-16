@@ -1,0 +1,15 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+{% for post in posts %}
+    <div class="jumbotron">
+        <h2>{{ post.title }}</h2>
+        <h4>{{ post.posted }}</h4>
+        <p>{{ post.description }}</p>
+        <p>Автор:{{ post.author }}</p>
+        <p><a href="{% url 'blogpost' parametr=post.id %}" class="btn btn-primary btn-large">Читать далее</a></p>
+    </div>
+{% endfor %}
+
+{% endblock %}

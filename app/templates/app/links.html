@@ -1,0 +1,13 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{ title }}:</h2>
+
+<address>
+<br /><a href="http://www.rivegauche.ru/"><img src="{% static 'app/content/rg.jpg' %}" alt="Ривгош"/></a><br />
+<br /><a href="https://www.kfc.ru/"><img src="{% static 'app/content/kfc.png' %}" width="230" alt="KFC"/></a>
+</address>
+
+{% endblock %}

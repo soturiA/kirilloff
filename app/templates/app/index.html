@@ -1,0 +1,81 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+{% load staticfiles %}
+
+<div class="jumbotron">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="{% static 'app/content/banner1.jpg'%} " alt="Первый слайд" class="img-responsive" />
+            </div>
+            <div class="item">
+                <img src="{% static 'app/content/banner2.jpg'%}" alt="Второй слайд"  class="img-responsive" />
+            </div>
+            <div class="item">
+                <img src=" {% static 'app/content/banner3.jpg'%} " alt="Третий слайд"  class="img-responsive" />
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</div>
+
+<div class="jumbotron">
+    <h1>ЧЕРНАЯ ПЯТНИЦА 50%.</h1>
+
+    <p class="lead">
+    Только 27 ноября цены рушим пополам.<br />
+    Скидка 50% на любой сеанс и попкорн.    <br />
+    Скидка на билеты не суммируются с другими акциями попадающие на 27.11.2020<br />
+    27.11.2020 гости могут воспользоваться акцией «День Рождения»<br />
+    Акция может быть запрещена на любой фильм по требованию кинопрокатной компании.<br />
+    Скидка распространяется на все виды попкорна, кроме попкорна Pop Gourmet.<br />
+	</p>
+    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Узнать больше &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>КОМБО-БОМБА</h2>
+        <p>           
+        Для всех любителей похрустеть новый "Комбо-Бомба" всего за 199 руб.<br />
+        В составе комбо-набора:<br />
+        Стакан маленького попкорна, вкус на выбор: сладкий, соленый, карамельный, сырный<br />
+        Разливной напиток 0,3 на выбор: («Кока-Кола», «Фанта», «Спрайт»).
+        </p>
+        <p><a class="btn btn-default" href="https://djangobook.com/django-tutorials/">Наши цены &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Подарок от Соника</h2>
+        <p>
+        Супербыстрый ежик Соник на наших экранах уже с 13 ФЕВРАЛЯ!!!<br />
+        И для наших зрителей мы запускаем розыгрыш подарков от Соника.<br />
+        На кону: фрисби, шейкеры, подставка для вашего смартфона
+		</p><br />
+        <p><a class="btn btn-default" href="https://pypi.org/">Узнать больше &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Лови момент</h2>
+        <p>
+        Предъяви билет с матча ХК СПАРТАК – получи скидку 15%.<br />
+        Скидка действует в течении недели с даты окончания матча.<br />
+        Скидка распространяется только на кинобилеты.<br />
+        Скидка не суммируется с другими специальными предложениями. 
+		</p><br />
+        <p><a class="btn btn-default" href="http://azure.microsoft.com">Наши цены &raquo;</a></p>
+    </div>
+</div>
+
+{% endblock %}
